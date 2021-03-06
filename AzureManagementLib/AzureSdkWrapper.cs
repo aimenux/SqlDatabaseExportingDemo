@@ -50,7 +50,7 @@ namespace AzureManagementLib
                 .ExecuteAsync(cancellationToken);
         }
 
-        private AzureCredentials GetAzureCredentials(AzureSdkSettings settings)
+        private static AzureCredentials GetAzureCredentials(AzureSdkSettings settings)
         {
             var clientId = settings.PrincipalClientId;
             var clientSecret = settings.PrincipalClientSecret;
